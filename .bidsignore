@@ -1,0 +1,5 @@
+#ignore folder
+/derivatives
+
+#ignore file
+EEG-fMRI_image03.csv
