@@ -1,0 +1,36 @@
+{
+    "onset": {
+        "Description": "Onset time in seconds when stimulus on current trial is at 1% coherence. Timelocked to fMRI scan start."
+    },
+    "duration": {
+        "Description": "Duration of trial in seconds."
+    },
+    "cue": {
+        "LongName": "Cue image",
+        "Description": "The type of image (city/mountain) presented to participants where cities are non-targets and mountains are targets",
+        "Levels": {
+	    	"0": "End of trial",
+            "1": "Target (mountain) nogo trial",
+            "2": "Non-target (city) go trial"
+        }
+    },
+    "timestamp": {
+        "Description": "The timestamp recorded from the GradCPT Matlab script on each trial."
+    },
+    "stimulus_coherence": {
+        "Description": "The coherence of the image to be judged on trial N as compared to trial N-1."
+    },
+    "response_time": {
+        "Description": "Response time in seconds calculated as the amount of time that has elapsed from when the N-1 image was at 100% coherence to the time of the response made by the participant."
+    },
+    "response": {
+        "LongName": "Coded response from the participant",
+        "Description": "Whether a commission response was correct / incorrect or whether a response was omitted.",
+        "Levels": {
+	    	"2": "Correct commission response",
+            "1": "Correct commission response",
+            "0": "No response",
+            "-1": "Incorrect commission response"
+        }
+    }
+}
