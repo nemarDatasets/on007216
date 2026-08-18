@@ -26,4 +26,4 @@
 
 #ignore files
 EEG-fMRI_image03.csv
-
+.nemar/
