@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "A multi-session simultaneous EEG-fMRI dataset with online experience sampling",
+  "description": "A multi-session dataset of simultaneous EEG-fMRI recorded from 24 healthy adults aged 18-35 while they performed a gradual-onset continuous performance task (GradCPT) and a resting-state condition with intermittent multidimensional experience sampling. The same protocol was repeated on two days. Carbon wire loop sensors in the EEG cap support artifact removal. The dataset also includes ECG, behavioral responses, and mental health surveys. It supports study of attentional fluctuations, mind-wandering, and the test-retest reliability of EEG-fMRI relationships.",
+  "methods_description": "Data were acquired on a 3T Siemens MAGNETOM Prisma with a 64-channel head coil. Acquisition included an MPRAGE T1-weighted scan, a B0 field map, and multiband gradient-echo EPI BOLD scans (TR 2000 ms, 2 mm isotropic voxels). EEG was recorded with a Brain Products MR-compatible system (BrainAmp MRPlus, BrainCap MR with 31 EEG channels, 4 carbon wire loops, and 1 ECG channel) at 5 kHz. MRI TR markers were recorded in the EEG data for synchronization. Each participant completed two sessions with one GradCPT run and three resting-state experience-sampling runs.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,6 +14,36 @@
     "Tiara Bounyarith": {},
     "Janet Z. Li": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "fMRI"
+    },
+    {
+      "term": "simultaneous EEG-fMRI"
+    },
+    {
+      "term": "experience sampling"
+    },
+    {
+      "term": "mind-wandering"
+    },
+    {
+      "term": "sustained attention"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Magnetic Resonance Imaging",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008279"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds007216.v1.0.0",
@@ -27,6 +59,16 @@
       "identifier": "https://nemar.org/dataset/on007216",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
@@ -35,15 +77,15 @@
       "award_number": "R21MH127384"
     }
   ],
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "eeg",
     "fmap",
     "func"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "123.4 GB (1910 files)"
+    "115 GB (1910 files)"
   ],
   "formats": [
     ".DS_Store",
@@ -60,31 +102,6 @@
     ".vhdr",
     ".vmrk",
     ".yml"
-  ],
-  "description": "This dataset comprises simultaneous EEG-fMRI recordings from 24 healthy adults performing a sustained attention task (GradCPT) and a resting-state task with intermittent multi-dimensional experience sampling, collected across two sessions per participant. It includes behavioral responses, experience sampling ratings across 13 dimensions of thought, and mental health survey data, enabling study of the neural correlates of attentional fluctuations, mind-wandering, and the reliability of EEG-fMRI relationships across sessions.",
-  "methods_description": "MRI data were acquired on a 3.0T Siemens MAGNETOM Prisma scanner using a 64-channel head coil adapted for EEG-fMRI, including MPRAGE structural scans, B0 field maps, and multiband EPI BOLD sequences. EEG data were recorded using an MR-compatible Brain Products system with 31 cortical channels, 4 carbon wire loop sensors for artifact correction, and an ECG channel, sampled at 5kHz and synchronized with MRI TR markers.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "fMRI"
-    },
-    {
-      "term": "mind-wandering"
-    },
-    {
-      "term": "sustained attention"
-    },
-    {
-      "term": "experience sampling"
-    },
-    {
-      "term": "resting state"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    }
   ],
   "source_hash": "9193771351889722a3eddf901989d3bb9a337930d0a61a9a674e2fd70e2af013"
 }
